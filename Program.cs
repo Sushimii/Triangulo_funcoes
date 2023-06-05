@@ -56,11 +56,11 @@ namespace Course
                 medidas[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             }
-            //Armazenar na variavel "medidas"
+            //Parar a execução do metodo e retornar o valor a variavel "medidas"
             return medidas;
         }
 
-        //Função para calcular a are do triangulo
+        //Metodo para calcular a area do triangulo
         public static double CalcularAreaTriangulo(double[] medidas)
         {
             //criando uma variavel tipo double que vai armazenar o valor da variavel "medidas" da coluna 0
@@ -74,7 +74,7 @@ namespace Course
             double p = (a + b + c) / 2.0;
             //Calculando a are do triangulo atraves da formula de Heron
             double area = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
-            //Armazenar valor na variavel "area"
+            //Parar a execução do programa e retornar o valor a variavel area
             return area;
         }
     }    
